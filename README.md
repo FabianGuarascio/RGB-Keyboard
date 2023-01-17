@@ -1,27 +1,20 @@
-# Portfolio20232
+# Rgb Keyboard with Sass and Stand Alone Component , also Tailwind
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+An programatic RGB keyboard using the functionalities of Sass
+### How is made the keyboard?
+Each key is an \<span> element. Each span element  is iterated trough a for loop but in Scss and not in Javascript. This allows to set a border color specific to each key. This combined with css animations gives the illusion of an RGB keyboard lights :fireworks: :fireworks: :fireworks:
 
-## Development server
+Also this for loop is used in a nested form to change the direction of the lights. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Wait , where is the javascript for that :question:
+This project takes advantage of the template reference that Angular provides to set the colors of the keyboard from the template :astonished: .
+That's right, you don't need a function from the class component to set the color , it's all done from the HTML (except the changing direction).
 
-## Code scaffolding
+The <input type="color"> has a template reference that is used to give to set the color variable in css.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### How is it made the visual effect of a Key with relieve
+Each key has a border that has different sizes for the top , bottom , left and right border. Also, each border has a different opacity to give a visual effect as you were seeing it on the side.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Wait , there is more.
+At last , this is an Angular 15 project which uses stand alone component. The rgbKeyboard is aa standalone component so you can copy the folder and paste it onto your angular project (it must be Angular V15 or support Stand Alone Components)
