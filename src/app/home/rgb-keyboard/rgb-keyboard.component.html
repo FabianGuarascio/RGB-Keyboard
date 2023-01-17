@@ -1,0 +1,84 @@
+
+<div class="actions_container flex pb-2 justify-content-center">
+    <button (click)="changeAnimation(keyboard.classList)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold  px-2 rounded">Change direction</button>
+    <input type="color" #color1 value="#ff00ff" (input)="color1.value = color1.value" class="first_color bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+    <input type="color" #color2 value="#eeff00" (input)="color2.value = color2.value" class="second_color bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 rounded">
+</div>
+<div 
+    #keyboard
+    class="keyboard_container top_to_bottom" 
+    style="
+    --color1:{{color1.value}};--color1_topBottom:{{color1.value + '80'}};--color1_left:{{color1.value + '5e'}};
+    --color2:{{color2.value}};--color2_topBottom:{{color2.value + '80'}};--color2_left:{{color2.value + '5e'}};
+    "
+    >
+
+    <span class="key row_1 col_1 ">Esc</span>
+    <span class="key row_1 col_2 ">1</span>
+    <span class="key row_1 col_3 ">2</span>
+    <span class="key row_1 col_4 ">3</span>
+    <span class="key row_1 col_5 ">4</span>
+    <span class="key row_1 col_6 ">5</span>
+    <span class="key row_1 col_7 ">6</span>
+    <span class="key row_1 col_8 ">7</span>
+    <span class="key row_1 col_9 ">8</span>
+    <span class="key row_1 col_10 ">9</span>
+    <span class="key row_1 col_11 ">0</span>
+    <span class="key row_1 col_12 ">-</span>
+    <span class="key row_1 col_13 ">=</span>
+    <span class="key row_1 col_14 span2">--</span>
+
+    <span class="key row_2 col_1 span2 ">Tab</span>
+    <span class="key row_2 col_2 ">q</span>
+    <span class="key row_2 col_3 ">w</span>
+    <span class="key row_2 col_4 ">e</span>
+    <span class="key row_2 col_5 ">r</span>
+    <span class="key row_2 col_6 ">t</span>
+    <span class="key row_2 col_7 ">y</span>
+    <span class="key row_2 col_8 ">u</span>
+    <span class="key row_2 col_9 ">i</span>
+    <span class="key row_2 col_10">o</span>
+    <span class="key row_2 col_11">p</span>
+    <span class="key row_2 col_12">{{'{'}}</span>
+    <span class="key row_2 col_13">}</span>
+    <span class="key row_2 col_14">\ |</span>
+
+    <span class="key row_3 col_1 span2">Bloq Mays</span>
+    <span class="key row_3 col_2 ">a</span>
+    <span class="key row_3 col_3 ">s</span>
+    <span class="key row_3 col_4 ">d</span>
+    <span class="key row_3 col_5 ">f</span>
+    <span class="key row_3 col_6 ">g</span>
+    <span class="key row_3 col_7 ">h</span>
+    <span class="key row_3 col_8 ">j</span>
+    <span class="key row_3 col_9 ">k</span>
+    <span class="key row_3 col_10">l</span>
+    <span class="key row_3 col_11">; :</span>
+    <span class="key row_3 col_12">' "</span>
+    <span class="key row_3 col_13 span2">Enter</span>
+
+
+    <span class="key row_4 col_1 span2">Shift</span>
+    <span class="key row_4 col_3 ">z</span>
+    <span class="key row_4 col_4 ">x</span>
+    <span class="key row_4 col_5 ">c</span>
+    <span class="key row_4 col_6 ">v</span>
+    <span class="key row_4 col_7 ">b</span>
+    <span class="key row_4 col_8 ">n</span>
+    <span class="key row_4 col_9 ">m</span>
+    <span class="key row_4 col_10">,</span>
+    <span class="key row_4 col_11">.</span>
+    <span class="key row_4 col_12">/</span>
+    <span class="key row_4 col_13 span3">Mayus</span>
+
+    <span class="key row_5 col_1 ">Ctrl</span>
+    <span class="key row_5 col_2 ">win</span>
+    <span class="key row_5 col_3 ">Alt</span>
+    <span class="key row_5 col_4 span8">Space</span>
+    <span class="key row_5 col_11">Alt</span>
+    <span class="key row_5 col_12">fn</span>
+    <span class="key row_5 col_13">win</span>
+    <span class="key row_5 col_14">Ctrl</span>
+ 
+</div>
+
