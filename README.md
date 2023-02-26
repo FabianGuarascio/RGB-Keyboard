@@ -17,4 +17,4 @@ Each key has a border that has different sizes for the top , bottom , left and r
 
 
 ## Wait , there is more.
-At last , this is an Angular 15 project which uses stand alone component. The rgbKeyboard is aa standalone component so you can copy the folder and paste it onto your angular project (it must be Angular V15 or support Stand Alone Components)
+At last , this is an Angular 15 project which uses stand alone component. The rgbKeyboard is an standalone component so you can copy the folder and paste it onto your angular project (it must be Angular V15 or support Stand Alone Components)
